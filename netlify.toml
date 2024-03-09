@@ -1,22 +1,5 @@
-[build]
-  command = "gatsby build"
-  functions = "netlify/functions"
-  publish = "public"
-
 [[redirects]]
   from = "/*"
   to = "https://kenekt.app"
   status = 301
   force = true # COMMENT: ensure that we always redirect
-
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
-
-[[plugins]]
-  package = "netlify-plugin-cypress"
-
-  [plugins.inputs.postBuild]
-    enable = true
-
-  [plugins.inputs]
-    enable = false
