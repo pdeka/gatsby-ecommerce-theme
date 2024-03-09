@@ -3,6 +3,13 @@
   functions = "netlify/functions"
   publish = "public"
 
+[[redirects]]
+  from = "/"
+  to = "https://kenekt.app"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  
 [[plugins]]
   package = "@netlify/plugin-gatsby"
 
