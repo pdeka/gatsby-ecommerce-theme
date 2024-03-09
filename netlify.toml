@@ -4,7 +4,7 @@
   publish = "public"
 
 [[redirects]]
-  from = "/*"
+  from = "https://kenekt.agency/*"
   to = "https://kenekt.app"
   status = 301
   force = true # COMMENT: ensure that we always redirect
